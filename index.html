@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- إعدادات السيو والسوشيال ميديا لموقع نبض الكرة -->
-  <title>نبض الكرة - مواعيد المباريات وأحدث الأخبار الرياضية</title>
-  <meta name="description" content="منصة نبض الكرة هي دليلك الموثوق لمعرفة مواعيد المباريات، القنوات الناقلة الرسمية، جدول البطولات، وأحدث أخبار كرة القدم العربية والعالمية.">
-  <meta name="keywords" content="نبض الكرة, مواعيد المباريات, القنوات الناقلة, جدول المباريات, أخبار كرة القدم, انتقالات اللاعبين">
+  <!-- إعدادات السيو والسوشيال ميديا لموقع نبض الكرة الإخباري -->
+  <title>نبض الكرة - تغطية إخبارية شاملة وأحدث مستجدات كرة القدم</title>
+  <meta name="description" content="منصة نبض الكرة هي مصدك الإخباري الموثوق لمتابعة أحدث أخبار كرة القدم، سوق انتقالات اللاعبين، التصريحات الحصرية، والتحليلات الرياضية العربية والعالمية.">
+  <meta name="keywords" content="نبض الكرة, أخبار كرة القدم, سوق الانتقالات, أخبار الرياضة, تصريحات اللاعبين, الدوري الإسباني, الدوري الإنجليزي, أخبار الأندية">
   <meta name="author" content="نبض الكرة">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://korapulse.com/">
@@ -19,8 +19,8 @@
   <!-- Open Graph / Social Media Meta -->
   <meta property="og:locale" content="ar_AR">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="نبض الكرة - جدول المباريات والأخبار">
-  <meta property="og:description" content="تغطية يومية لمواعيد المباريات، القنوات الناقلة، وأحدث المستجدات الكروية.">
+  <meta property="og:title" content="نبض الكرة - مستجدات وأخبار كرة القدم العالمية">
+  <meta property="og:description" content="تغطية إخبارية على مدار الساعة لأحدث الأخبار الرياضية وصفقات الانتقالات الحصرية.">
   <meta property="og:image" content="mg.png">
   <meta property="og:url" content="https://korapulse.com/">
   <meta property="og:site_name" content="نبض الكرة">
@@ -29,10 +29,10 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SportsNewsArticle",
+    "@type": "NewsArticle",
     "mainEntityOfPage": "https://korapulse.com/",
     "headline": "نبض الكرة",
-    "description": "مواعيد المباريات وأحدث الأخبار الرياضية العربية والعالمية",
+    "description": "منصة إخبارية متخصصة في نشر أحدث المستجدات والتقارير الرياضية",
     "inLanguage": "ar"
   }
   </script>
@@ -134,7 +134,7 @@
       text-overflow: ellipsis;
     }
 
-    /* واجهة الـ Hero */
+    /* واجهة الـ Hero الإخبارية */
     .hero {
       background: linear-gradient(135deg, #0f172a 0%, #064e3b 100%);
       text-align: center;
@@ -154,7 +154,7 @@
     }
 
     .hero p {
-      font-size: 15px;
+      font-size: 15.5px;
       color: var(--text-muted);
       margin-bottom: 22px;
     }
@@ -210,7 +210,7 @@
       color: white;
     }
 
-    /* شبكة الكروت (تضاف المواد ديناميكياً من ملفات typ[n].js) */
+    /* شبكة كروت الأخبار (تضاف الأخبار ديناميكياً من ملفات typ[n].js) */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -441,34 +441,34 @@
     <nav>
       <ul>
         <li><a href="#">الرئيسية</a></li>
-        <li><a href="#matches">المباريات</a></li>
-        <li><a href="#news">الأخبار</a></li>
+        <li><a href="#transfers">سوق الانتقالات</a></li>
+        <li><a href="#news">أخبار الأندية</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- شريط الأخبار العاجلة -->
   <div class="ticker-wrap">
-    <span class="ticker-title">عاجل</span>
-    <span class="ticker-text">متابعة مستمرة لأهم مواعيد مباريات اليوم والقنوات الناقلة والمعلقين.</span>
+    <span class="ticker-title">أخبار عاجلة</span>
+    <span class="ticker-text">تغطية صحفية مستمرة لأحدث صفقات الانتقالات والتصريحات الرياضية الحصرية.</span>
   </div>
 
   <!-- واجهة الـ Hero -->
   <section class="hero">
-    <h1>نبض <span class="brand-highlight">الكرة</span></h1>
-    <p>دليلك الرياضي لمواعيد المباريات، القنوات الناقلة الرسمية، وأحدث أخبار كرة القدم</p>
+    <h1>نبض <span class="brand-highlight">الكرة</span> الإخباري</h1>
+    <p>منصتك الرياضية الأولى لمتابعة المستجدات، التقارير الصحفية، وكواليس سوق الانتقالات</p>
     <div class="search-box">
-      <input type="text" placeholder="ابحث عن مباراة، نادي، أو بطولة...">
+      <input type="text" placeholder="ابحث عن خبر، نادي، أو لاعب...">
       <button>بحث</button>
     </div>
   </section>
 
   <div class="container">
 
-    <!-- قسم المشاركات والمباريات -->
-    <h2 class="section-title">أحدث التغطيات والمباريات</h2>
+    <!-- قسم الأخبار الرئيسية -->
+    <h2 class="section-title">أحدث التقارير والأخبار</h2>
     
-    <!-- الشبكة مفرغة وجاهزة لاستقبال الكروت عبر ملفات الجافاسكريبت الخارجية -->
+    <!-- الشبكة مفرغة وجاهزة لاستقبال الكروت الإخبارية عبر ملفات الجافاسكريبت الخارجية -->
     <div class="grid" id="mainGrid"></div>
 
   </div>
@@ -503,7 +503,7 @@
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('aboutModal')">&times;</button>
       <h2 class="section-title">من نحن</h2>
-      <p style="margin-top: 15px; color: var(--text-muted);">مرحباً بك في منصة <strong>نبض الكرة</strong>! نحن موقع رياضي متخصص في توفير جدول مواعيد المباريات، القنوات الناقلة الرسمية، المعلقين، وأهم الأخبار والتحليلات الرياضية بكل حيادية ودقة.</p>
+      <p style="margin-top: 15px; color: var(--text-muted);">مرحباً بك في منصة <strong>نبض الكرة</strong>! نحن موقع إخباري متخصص في تغطية أحدث مستجدات كرة القدم العربية والعالمية، سوق الانتقالات، التقارير الصحفية، وتحليلات المباريات بكل حيادية ومصداقية.</p>
     </div>
   </div>
 
@@ -512,7 +512,7 @@
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('privacyModal')">&times;</button>
       <h2 class="section-title">سياسة الخصوصية</h2>
-      <p style="margin-top: 15px; color: var(--text-muted);">نحن في <strong>نبض الكرة</strong> نلتزم بالحفاظ على خصوصية الزوار. لا نقوم بنشر أو استضافة أي بث غير قانوني ونكتفي بتوفير المعلومات الرياضية والقنوات الناقلة الرسمية فقط.</p>
+      <p style="margin-top: 15px; color: var(--text-muted);">نحن في <strong>نبض الكرة</strong> نلتزم بتقديم محتوى صحفي موثوق وحماية خصوصية الزوار وفق أعلى المعايير المعتمدة في نشر الأخبار الرياضية.</p>
     </div>
   </div>
 
@@ -577,7 +577,7 @@
   </script>
 
   <!-- ==================================================== -->
-  <!-- استدعاء ملفات المباريات والأخبار الخارجية -->
+  <!-- استدعاء ملفات الأخبار والتقارير الخارجية -->
   <!-- ==================================================== -->
   
   <script src="typ1.js"></script>
