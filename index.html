@@ -75,18 +75,30 @@
       border-bottom: 1px solid var(--border-color);
     }
 
+    /* تحسين شكل اللوجو ليصبح متناسقاً وأنيقاً */
     .logo {
-      font-size: 22px;
-      font-weight: bold;
+      font-size: 24px;
+      font-weight: 800;
       color: white;
       text-decoration: none;
       display: flex;
-      align-items: center;
-      gap: 8px;
+      align-items: baseline;
+      gap: 6px;
+      letter-spacing: -0.5px;
     }
 
-    .logo span {
+    .logo .brand-highlight {
+      color: var(--accent-green);
+    }
+
+    .logo .sub-logo {
+      font-size: 11px;
+      font-weight: 600;
       color: var(--primary-green);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-right: 4px;
     }
 
     nav ul {
@@ -142,18 +154,27 @@
     }
 
     .hero h1 {
-      font-size: 34px;
-      font-weight: bold;
-      margin-bottom: 10px;
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 6px;
       color: white;
     }
 
-    .hero h1 span {
+    .hero h1 .brand-highlight {
+      color: var(--accent-green);
+    }
+
+    .hero .hero-subtext {
+      font-size: 13px;
+      font-weight: 700;
       color: var(--primary-green);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      font-size: 16px;
+      font-size: 15px;
       color: var(--text-muted);
       margin-bottom: 22px;
     }
@@ -432,9 +453,12 @@
 </head>
 <body>
 
-  <!-- الهيدر الرئيسي -->
+  <!-- الهيدر الرئيسي مع تحسين عرض اسم الموقع -->
   <header>
-    <a href="#" class="logo">نبض <span>الكرة</span></a>
+    <a href="#" class="logo">
+      نبض <span class="brand-highlight">الكرة</span>
+      <span class="sub-logo">KORAPULSE</span>
+    </a>
     <nav>
       <ul>
         <li><a href="#">الرئيسية</a></li>
@@ -452,7 +476,8 @@
 
   <!-- واجهة الـ Hero -->
   <section class="hero">
-    <h1>نبض <span>الكرة</span> | KoraPulse</h1>
+    <h1>نبض <span class="brand-highlight">الكرة</span></h1>
+    <div class="hero-subtext">KoraPulse Sports</div>
     <p>دليلك الرياضي لمواعيد المباريات، القنوات الناقلة الرسمية، وأحدث أخبار كرة القدم</p>
     <div class="search-box">
       <input type="text" placeholder="ابحث عن مباراة، نادي، أو بطولة...">
